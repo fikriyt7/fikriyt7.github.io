@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoPolio - Zainul Fikri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffffff, #ffffff, #555); /* Gradasi warna */
+        }
+
+       
+
+        nav {
+            display: flex;
+            justify-content: right;
+            background-color: #444;
+            padding: 10px;
+    
+            background: linear-gradient(to right, #b12222, #444, #555); /* Gradasi warna */
+
+        }
+        NAV h1{
+            font-family: 'Parisienne', sans-serif;
+            font-style: italic;
+            margin-right: 400px;
+        }
+        nav ul{
+            background-color: #2e2323;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+        
+        nav a {
+            margin-right: 100px;
+         
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10 15px;
+            position: relative;
+            transition: color 0.3s;
+            
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 500px; /* Adjust the size of the image */
+            height: 700px;
+            object-fit: cover;
+        }
+
+        .profile-info {
+            text-align: left;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .profile-info.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .portfolio-item {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item h3 {
+            color: #333;
+        }
+
+        .portfolio-item p {
+            color: #555;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <nav>
+        <h1>Zainul Fikri</h1>
+        <UL>
+            <a href="#about">Tentang Saya</a>
+            <a href="#skills">Keterampilan</a>
+            <a href="#portfolio">Portofolio</a>
+            <a href="#contact">Kontak</a>
+            
+        </UL>
+    </nav>
+
+    <section id="about">
+      
+        
+        <div class="profile">
+            <img src="img/170a261400ss1531-picsay(2).jpg" alt="Zainul Fikri">
+            <div class="profile-info">
+                <h1 style="font-size: 40px;"> front end developer</h1>
+                <p style="text-align: justify;">Saya adalah seorang mahasiswa Teknik Informatika di Universitas Hamzanwadi. <br>
+                    Saya memiliki minat yang kuat dalam pengembangan front-end, desain grafis,<br> dan ilustrasi. Saya senangbr
+
+                     menciptakan pengalaman pengguna yang menarik <br> dan estetika visual yang menarik.</p>
+            </div>
+        </div>
+    </section>
+   
+
+    <section id="skills">
+        <h2>Keterampilan</h2>
+        <p>Saya memiliki keterampilan di beberapa bidang, antara lain:</p>
+        <ul>
+            <li>Front End Development</li>
+            <li>Desain Grafis</li>
+            <li>Corel Photoshop</li>
+            <li>Ilustrasi</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portofolio</h2>
+
+        <div class="portfolio-item">
+            <h3>Front End Development</h3>
+            <p> projects.</p>
+            <a href="https://github.com/users/fikriyt7/">fikriyt7</a>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Desain Grafis</h3>
+            <a href="https://www.instagram.com/see_art7/">see_art7</a>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Corel Photoshop</h3>
+            <a href="https://www.instagram.com/see_art7/">see_art7</a>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Ilustrasi</h3>
+            <a href="https://www.instagram.com/see_art7/">see_art7</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <div class="social-icons">
+            <a href="<URL_TO_YOUR_FACEBOOK_PROFILE>" target="_blank">fikri<i class="fab fa-facebook"></i></a>
+            <a href="<URL_TO_YOUR_TWITTER_PROFILE>" target="_blank">fikri_yt7<i class="fab fa-twitter"></i></a>
+            <a href="<URL_TO_YOUR_LINKEDIN_PROFILE>" target="_blank">fikri_art<i class="fab fa-linkedin"></i></a>
+            <a href="<URL_TO_YOUR_GITHUB_PROFILE>" target="_blank">fikri_yt7<i class="fab fa-github"></i></a>
+        </div>
+        <br>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+
+        <div class="social-icons">
+            <a href="<URL_TO_YOUR_FACEBOOK_PROFILE>" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="<URL_TO_YOUR_TWITTER_PROFILE>" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="<URL_TO_YOUR_LINKEDIN_PROFILE>" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="<URL_TO_YOUR_GITHUB_PROFILE>" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 FotoPolio - Zainul Fikri
+    </footer
+
+    <!-- ... (sisa kode) ... -->
+
+    <script>
+        // Menambahkan animasi teks pada kelas profile-info
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileInfo = document.querySelector('.profile-info');
+            profileInfo.classList.add('show');
+        });
+    </script>
+</body>
+</html>
