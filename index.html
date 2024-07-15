@@ -3,247 +3,580 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoPolio - Zainul Fikri</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
+    <title>Document</title>
+    <link rel="stylesheet" href="lk.css">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        html{
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ffffff, #ffffff, #555); /* Gradasi warna */
         }
-
-       
-
-        nav {
+        body{
+            background-color: #0b0e16;
+            font-family: sans-serif;
+        }
+        .containerutama{
             display: flex;
-            justify-content: right;
-            background-color: #444;
-            padding: 10px;
-    
-            background: linear-gradient(to right, #b12222, #444, #555); /* Gradasi warna */
-
-        }
-        NAV h1{
-            font-family: 'Parisienne', sans-serif;
-            font-style: italic;
-            margin-right: 400px;
-        }
-        nav ul{
-            background-color: #2e2323;
-            padding: 10px;
-            border-radius: 10px;
-            
-        }
-        
-        nav a {
-            margin-right: 100px;
-         
-            color: #ffffff;
-            text-decoration: none;
-            margin: 10 15px;
+            height: 85vh;
+            width: 100%;
             position: relative;
-            transition: color 0.3s;
-            
         }
-
-        nav a:hover {
-            background-color: #ddd;
-            padding: 10px;
-            border-radius: 10px;
-            
+        .container{
+            display: flex;
+            flex-direction: column;
+          
+           
+            justify-items: center;
+            justify-content: center;
+            position: relative;
         }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .profile {
+        .kotak{
+        
+            height: 600px;
+            width: 600px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
         }
-
-        .profile img {
+        
+        .dua img{
+           width: auto;
+          
+            height: 600px;
+          
+        }
+        .satu{
+            margin-top:30%;
+            background-color: yellow;
+            box-shadow: 0 0 50px yellow;
             border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .dua{
+            display: flex;
+        
+            position: absolute;
+        }
+        .dua .png{
+        
+            width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        .dua1{
+            position: relative;
+         
+        }
+        .tiga{
+            height: 600px;
+            width: 600px;
+        
+            position: absolute;
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            align-content: center;
+        }
+        .tiga1{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .tiga1 img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            
+            
+        }
+        .tiga1:last-child{
+            margin-right: 10px;
+            margin-top: -30px;
+           
+          
+        
+        }
+        .tiga1 .img1{
+            transform: rotate(-20deg);
+            margin-left: 40px;
+            background-color: rgba(255, 166, 0, 0.586);
+            text-align: center;
+            box-shadow: 0 0 50px  rgb(255, 166, 0);;
+        }
+        .tiga1 .img3{
+            transform: rotate(20deg);
+            
+            background-color: rgba(127, 240, 255, 0.652);
+            box-shadow: 0 0 50px  rgb(127, 240, 255);
+        }
+        .tiga1 .img2{
+         background-color: rgba(255, 208, 0, 0.501);
+         box-shadow:0 0 50px  rgba(255, 208, 0, 0.501);
+         
+        
+           margin-top:300px;
+           margin-right: 20px;
+           border-radius: 50%;
+        }
+        
+        .teks1{
+        
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .teks1 p {
+            display: inline-block;
+            width: 80%;
+            margin-top: -10px;
+           
+           
+        
+        }
+        .teks1 h1{
+            color: white;
+            margin-bottom: -20px;
+            font-size: 56px;
+            font-weight: bold;
+            font-family: sans-serif;
+          
+        }
+        .teks1 span{
+            color: yellow;
+        }
+        
+        .sosmed{
+          display: flex;
+          width: 200px;
+          box-sizing: border-box;
+         
+          position: relative;
+            
+        }
+        .sosmed a{
+            display: inline-block;
+            margin-right: -50px;
+        }
+        
+        .sosmed img{
+           
+            height: 30px;
+          margin-left: -100px;
+            border-radius: 50%;
+           border: 2px solid yellow;
+        }
+        #typewriter {
+            font-size: 25px;
+            overflow: hidden; /* Mengatur overflow agar teks tidak keluar dari kotak */
+             /* Efek cursor */
+            white-space: nowrap; /* Agar teks tidak turun ke baris baru */
+            /* Posisi teks di tengah */
+            letter-spacing: .15em; /* Jarak antar huruf */
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+            color:yellow;
+          }
+          
+          /* Animasi mengetik */
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+        #typewriter h2 {
+            display: inline; /* Untuk menjaga "Front End Developer" tetap dalam satu baris */
+            }
+            #typewriter .developer {
+            color: yellow; /* Ubah warna teks Developer menjadi biru */
+            }
+        .header{
+            position:sticky;
+            z-index: 999;
+            width: 100%;
+            display: flex;
+            justify-content: end;
+          
+        }
+        .nav{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+        }
+        
+        .nav ul{
+            width: 50%;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+          
+            
+          
+            
+        }
+        
+        .nav a{
+            
+            
+            text-decoration: none;
             margin-right: 20px;
-            width: 500px; /* Adjust the size of the image */
-            height: 700px;
-            object-fit: cover;
+            color: white;
+            font-weight: bold;
+            
+            font-size: 20px;
         }
-
-        .profile-info {
-            text-align: left;
+        .nav a:hover{
+            color: yellow;
+        }
+        .teks1{
+            width: 50%;
+        }
+        .teks1 a{
+            margin-left: 100px;
+            color: yellow;
+        }
+        .teks1 p{
+            color: white;
+        
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+        
+        .bounce {
+            animation: bounce 2s infinite;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 5em;
+            font-weight: bold;
+          
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s, transform 0.5s;
+            transition: opacity 0.3s ease-in-out;
+          }
+          .png:hover img {
+            transform: scale(1.1); /* Zoom in effect */
+            
+          }
+          .png:hover .text {
+            opacity: 1;
+            text-shadow:5px 5px 10px  rgb(4, 21, 255);
+            animation: bounce 1s infinite;
+          }
+          .typing-container {
+            font-family: monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            margin-top: -10px;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 1.5em;
+            width: 24em; /* Adjust based on your text length */
+            
+            letter-spacing: 0.15em;
+            display: flex;
+            align-items: center;
         }
-
-        .profile-info.show {
+        .typing-container span{
+            color: yellow;
+        }
+        
+        
+        
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            50.01%, 100% {
+                opacity: 0;
+            }
+        }
+        .content2{
+            width:100%;
+            height:100vh;
+        }
+        .content2{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            border: 1px solid red;
+            justify-content: start;
+            align-items: center;
+            align-content: center;
+        }
+        .content2 img{
+            width: auto;
+            height: 500px;
+            margin-left: 50px;
+          
+            
+        }
+        
+        
+        .content2 h1{
+            text-align: center;
+            
+            margin-left: 50px;
+            color: white;
+            font-size: 36px;
+            
+            font-weight: bold;
+        }
+        .gambar3{
+            width: 400px;
+            height: auto;
+           
+            background-color:rgba(255, 255, 255, 0.387);
+            backdrop-filter: blur(10px);
+            margin-left: 40px;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        
+        }
+        .gambar3 h4{
+            font-size: 36px;
+            color: yellow;
+        }
+        .gambar2 p{
+            text-align: start;
+            align-items: center;
+            display: block;
+            align-content: center;
+            
+        
+        }
+        .gambar2 h1{
+            text-align: start;
+        
+        }
+        .gambar3 button{
+            padding: 5px;
+            background-color: transparent;
+            border: 2px solid yellow;
+            color: white;
+            font-weight: bold;
+            border-radius: 100px;
+            box-shadow: 0PX 0PX 10px yellow;
+        }
+        .gambar3 button:hover{
+            box-shadow: 0px 0px 10px blue;
+            border: 2px solid blue;
+        
+        }
+        .content2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+        }
+        
+        .gambar2, .gambar3 {
+           
+         
+            opacity: 0; /* Start hidden */
+            transform: translateY(50px); /* Start translated */
+            transition: opacity 1s, transform 1s; /* Smooth transition */
+        }
+        
+        .gambar2 img {
+            
+            border-radius: 10px;
+        }
+        
+        .gambar3 h4 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .gambar3 p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .gambar3 button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .gambar3 button:hover {
+            background-color: #45a049;
+        }
+        
+        .hidden {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        
+        .fadeIn {
             opacity: 1;
             transform: translateY(0);
         }
-
-        .portfolio-item {
-            margin-bottom: 40px;
-            border: 1px solid #ddd;
-            padding: 20px;
-            background-color: #fff;
-            transition: transform 0.3s;
-        }
-
-        .portfolio-item:hover {
-            transform: scale(1.05);
-        }
-
-        .portfolio-item h3 {
-            color: #333;
-        }
-
-        .portfolio-item p {
-            color: #555;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            color: #333;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+        
+ 
+    
+   
+        
     </style>
 </head>
 <body>
-    
-    
-    <nav>
-        <h1>Zainul Fikri</h1>
-        <UL>
-            <a href="#about">Tentang Saya</a>
-            <a href="#skills">Keterampilan</a>
-            <a href="#portfolio">Portofolio</a>
-            <a href="#contact">Kontak</a>
-            
-        </UL>
-    </nav>
-
-    <section id="about">
-      
-        
-        <div class="profile">
-            <img src="img/170a261400ss1531-picsay(2).jpg" alt="Zainul Fikri">
-            <div class="profile-info">
-                <h1 style="font-size: 40px;"> front end developer</h1>
-                <p style="text-align: justify;">Saya adalah seorang mahasiswa Teknik Informatika di Universitas Hamzanwadi. <br>
-                    Saya memiliki minat yang kuat dalam pengembangan front-end, desain grafis,<br> dan ilustrasi. Saya senangbr
-
-                     menciptakan pengalaman pengguna yang menarik <br> dan estetika visual yang menarik.</p>
+    <header class="header">
+        <nav class="nav">
+            <div class="teks1">
+               <a href="">Portfolio</a>
             </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="">Client</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerutama">
+    <div class="container">
+        <div class="kotak">
+            <div class=" satu"></div>
         </div>
-    </section>
+        <div class=" dua">
+            <div class="dua1">
+                <div class="tiga">
+                    <div class="tiga1">
+                        <img class="img1 bounce" src="html.png" alt="">
+                    </div>
+                    <div class="tiga1">
+                        <img class="img2 bounce" src="js1.png" alt="">
+                    </div>
+                    <div class="tiga1">
+                        <img class="img3 bounce" src="css.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="png">
+
+                    
+              <img src="foto.png" alt="">
+              <div class="text">hello</div>
+            </div>
+                
+            </div>
+           
+        </div>
+    </div>
+    <div class="teks1">
+    <h1>Hi, I,m  <span>Fikri</span> </h1>
+    <h2 id="typewriter">Frontend Developer</h2>
    
-
-    <section id="skills">
-        <h2>Keterampilan</h2>
-        <p>Saya memiliki keterampilan di beberapa bidang, antara lain:</p>
-        <ul>
-            <li>Front End Development</li>
-            <li>Desain Grafis</li>
-            <li>Corel Photoshop</li>
-            <li>Ilustrasi</li>
-        </ul>
-    </section>
-
-    <section id="portfolio">
-        <h2>Portofolio</h2>
-
-        <div class="portfolio-item">
-            <h3>Front End Development</h3>
-            <p> projects.</p>
-            <a href="https://github.com/users/fikriyt7/">fikriyt7</a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim est minus! Provident perferendis rem qui consectetur repellat architecto tempora nisi? Animi deleniti commodi accusamus nobis, praesentium aliquam eum harum? Corrupti quisquam repellat delectus illo, alias quaerat atque quidem eius autem culpa suscipit hic eveniet.</p>
+        <div class="typing-container">
+            <span id="typed-text"></span>
+            <span class="cursor">&nbsp;</span>
         </div>
-
-        <div class="portfolio-item">
-            <h3>Desain Grafis</h3>
-            <a href="https://www.instagram.com/see_art7/">see_art7</a>
+        <h4 style="color:white; margin-top:-5px;">my social media</h4>
+        <div class="sosmed">
+           
+           <a href=""><img src="logo2.png" alt=""></a>
+           <a href=""><img src="ig.png" alt=""></a>
+           <a href=""><img src="logo11.png" alt=""></a>
+           <a href=""><img src="logo3.png" alt=""></a>
+           
+            
         </div>
+    </div>
 
-        <div class="portfolio-item">
-            <h3>Corel Photoshop</h3>
-            <a href="https://www.instagram.com/see_art7/">see_art7</a>
-        </div>
+</div>
+<div class="content2" id="about">
+    <div class="gambar2 animated fadeInLeft">
+        <img src="gambar2.png" alt="">
+    </div>
+    <div class="gambar3 animated fadeInRight">
+        <h4>Front End Developer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maiores laborum debitis.<br>
+        Rerum ipsam quibusdam dolorem eaque molestiae aliquid quasi eligendi nesciunt quae provident,<br>
+        distinctio repellat praesentium aliquam ullam adipisci.</p>
+        <button type="button">Download CV</button>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const elementsToAnimate = document.querySelectorAll('.content2 .gambar2, .content2 .gambar3');
+    
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    
+        function checkAnimation() {
+            elementsToAnimate.forEach(element => {
+                if (isInViewport(element)) {
+                    element.classList.add('fadeIn');
+                }
+            });
+        }
+    
+        window.addEventListener('scroll', checkAnimation);
+        window.addEventListener('resize', checkAnimation);
+    
+        // Initial check in case the element is already in the viewport
+        checkAnimation();
+    });
+    
+    const textArray = ["Hello, World!", "Welcome to my website.", "Enjoy your stay!"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
 
-        <div class="portfolio-item">
-            <h3>Ilustrasi</h3>
-            <a href="https://www.instagram.com/see_art7/">see_art7</a>
-        </div>
-    </section>
+const typedTextSpan = document.getElementById("typed-text");
 
-    <section id="contact">
-        <h2>Kontak</h2>
-        <div class="social-icons">
-            <a href="<URL_TO_YOUR_FACEBOOK_PROFILE>" target="_blank">fikri<i class="fab fa-facebook"></i></a>
-            <a href="<URL_TO_YOUR_TWITTER_PROFILE>" target="_blank">fikri_yt7<i class="fab fa-twitter"></i></a>
-            <a href="<URL_TO_YOUR_LINKEDIN_PROFILE>" target="_blank">fikri_art<i class="fab fa-linkedin"></i></a>
-            <a href="<URL_TO_YOUR_GITHUB_PROFILE>" target="_blank">fikri_yt7<i class="fab fa-github"></i></a>
-        </div>
-        <br>
-        <div class="contact-form">
-            <form action="#" method="post">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name" required>
+function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+    } else {
+        setTimeout(erase, newTextDelay);
+    }
+}
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+function erase() {
+    if (charIndex > 0) {
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+    } else {
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 1100);
+    }
+}
 
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+    setTimeout(type, newTextDelay + 250);
+});
 
-                <button type="submit">Kirim Pesan</button>
-            </form>
-        </div>
-
-        <div class="social-icons">
-            <a href="<URL_TO_YOUR_FACEBOOK_PROFILE>" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="<URL_TO_YOUR_TWITTER_PROFILE>" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="<URL_TO_YOUR_LINKEDIN_PROFILE>" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="<URL_TO_YOUR_GITHUB_PROFILE>" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2024 FotoPolio - Zainul Fikri
-    </footer
-
-    <!-- ... (sisa kode) ... -->
-
-    <script>
-        // Menambahkan animasi teks pada kelas profile-info
-        document.addEventListener('DOMContentLoaded', function() {
-            const profileInfo = document.querySelector('.profile-info');
-            profileInfo.classList.add('show');
-        });
-    </script>
+</script>
 </body>
 </html>
