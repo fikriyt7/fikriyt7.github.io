@@ -19,6 +19,7 @@
             height: 85vh;
             width: 100%;
             position: relative;
+            margin-bottom: 100px;
         }
         .container{
             display: flex;
@@ -300,133 +301,53 @@
                 opacity: 0;
             }
         }
-        .content2{
-            width:100%;
-            height:100vh;
-        }
-        .content2{
-            display: flex;
+        .content{
             width: 100%;
             height: 100vh;
-            border: 1px solid red;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+
+        }
+        .content1{
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .content1 img{
+            height: 500px;
+            width: auto;
+        }
+        .content1 h1{
+            color: white;
+
+        }
+        .content2{
+            display: flex;
             justify-content: start;
             align-items: center;
-            align-content: center;
+            flex-grow: 2;
+            height: 100%;
+            background-color: #131825;
         }
-        .content2 img{
-            width: auto;
-            height: 500px;
-            margin-left: 50px;
-          
-            
+        .isi{
+            width: 50%;
+            padding: 30px;
         }
-        
-        
-        .content2 h1{
-            text-align: center;
-            
-            margin-left: 50px;
-            color: white;
-            font-size: 36px;
-            
-            font-weight: bold;
-        }
-        .gambar3{
-            width: 400px;
-            height: auto;
-           
-            background-color:rgba(255, 255, 255, 0.387);
-            backdrop-filter: blur(10px);
-            margin-left: 40px;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-        
-        }
-        .gambar3 h4{
-            font-size: 36px;
+        .isi h1{
             color: yellow;
-        }
-        .gambar2 p{
-            text-align: start;
-            align-items: center;
-            display: block;
-            align-content: center;
-            
-        
-        }
-        .gambar2 h1{
-            text-align: start;
-        
-        }
-        .gambar3 button{
-            padding: 5px;
-            background-color: transparent;
-            border: 2px solid yellow;
-            color: white;
+            font-size: 36px;
             font-weight: bold;
-            border-radius: 100px;
-            box-shadow: 0PX 0PX 10px yellow;
         }
-        .gambar3 button:hover{
-            box-shadow: 0px 0px 10px blue;
-            border: 2px solid blue;
-        
-        }
-        .content2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 50px;
-        }
-        
-        .gambar2, .gambar3 {
-           
-         
-            opacity: 0; /* Start hidden */
-            transform: translateY(50px); /* Start translated */
-            transition: opacity 1s, transform 1s; /* Smooth transition */
-        }
-        
-        .gambar2 img {
-            
-            border-radius: 10px;
-        }
-        
-        .gambar3 h4 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        .gambar3 p {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        
-        .gambar3 button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
+        .isi p{
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
         }
         
-        .gambar3 button:hover {
-            background-color: #45a049;
-        }
         
-        .hidden {
-            opacity: 0;
-            transform: translateY(50px);
-        }
-        
-        .fadeIn {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      
         
  
     
@@ -499,84 +420,34 @@
             
         </div>
     </div>
+</div>
+
+
+<div class="content">
+    <div class="content1">
+        <h1>About me</h1>
+        <img src="gambar1.png" alt="">
+       
+    </div>
+    <div class="content2">
+        <div class="isi">
+
+            <h1>Front end developer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis perspiciatis earum eveniet itaque architecto! Voluptatibus incidunt ut quis sapiente nesciunt necessitatibus aperiam quia maxime, quod voluptatum accusantium eum amet? Corporis laudantium consequatur aperiam a consectetur, dolore cupiditate voluptas quasi necessitatibus beatae voluptatum voluptate voluptatem non!</p>
+        </div>
+    </div>
+        
+
+
 
 </div>
-<div class="content2" id="about">
-    <div class="gambar2 animated fadeInLeft">
-        <img src="gambar2.png" alt="">
-    </div>
-    <div class="gambar3 animated fadeInRight">
-        <h4>Front End Developer</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maiores laborum debitis.<br>
-        Rerum ipsam quibusdam dolorem eaque molestiae aliquid quasi eligendi nesciunt quae provident,<br>
-        distinctio repellat praesentium aliquam ullam adipisci.</p>
-        <button type="button">Download CV</button>
-    </div>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const elementsToAnimate = document.querySelectorAll('.content2 .gambar2, .content2 .gambar3');
-    
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-    
-        function checkAnimation() {
-            elementsToAnimate.forEach(element => {
-                if (isInViewport(element)) {
-                    element.classList.add('fadeIn');
-                }
-            });
-        }
-    
-        window.addEventListener('scroll', checkAnimation);
-        window.addEventListener('resize', checkAnimation);
-    
-        // Initial check in case the element is already in the viewport
-        checkAnimation();
-    });
-    
-    const textArray = ["Hello, World!", "Welcome to my website.", "Enjoy your stay!"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
 
-const typedTextSpan = document.getElementById("typed-text");
 
-function type() {
-    if (charIndex < textArray[textArrayIndex].length) {
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, typingDelay);
-    } else {
-        setTimeout(erase, newTextDelay);
-    }
-}
 
-function erase() {
-    if (charIndex > 0) {
-        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-        charIndex--;
-        setTimeout(erase, erasingDelay);
-    } else {
-        textArrayIndex++;
-        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-        setTimeout(type, typingDelay + 1100);
-    }
-}
 
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-    setTimeout(type, newTextDelay + 250);
-});
 
-</script>
+
+
+<script src="scripts.js"></script>
 </body>
 </html>
