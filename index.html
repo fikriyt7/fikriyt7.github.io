@@ -3,510 +3,839 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="lk.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <title>Zainul Fikri</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+ 
     <style>
-        html{
+        html,body{
             margin: 0;
             padding: 0;
         }
         body{
-            background-color: #0b0e16;
-            font-family: sans-serif;
+            background-color: #0e0e14;
+            
         }
-        .containerutama{
+        .container1{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns:1fr 1.5fr;
+            grid-template-areas: "header header" "aside main";
+            grid-template-rows: 1fr 8fr;
+        }
+        .header1{
+            grid-area: header;
+         
+
+        }
+        .aside1{
+            grid-area: aside;
+      
             display: flex;
-            height: 85vh;
-            width: 100%;
-            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+        .main1{
+            grid-area: main;
+            display: flex;
             margin-bottom: 100px;
-        }
-        .container{
-            display: flex;
-            flex-direction: column;
-          
+
            
-            justify-items: center;
-            justify-content: center;
-            position: relative;
         }
-        .kotak{
-        
-            height: 600px;
-            width: 600px;
-            display: flex;
+
+    @media (max-width:700px){
+        .main1{
+            text-align: center;
+         
             justify-content: center;
             align-items: center;
+
+            margin-top: 120px;
         }
-        
-        .dua img{
-           width: auto;
-          
-            height: 600px;
-          
-        }
-        .satu{
-            margin-top:30%;
-            background-color: yellow;
-            box-shadow: 0 0 50px yellow;
-            border-radius: 50%;
-            height: 300px;
-            width: 300px;
-            
-        }
-        .dua{
-            display: flex;
-        
-            position: absolute;
-        }
-        .dua .png{
-        
-            width: 600px;
-            display: flex;
+        .main1 .teks1 {
+            width: 100%;
             justify-content: center;
-        }
-        .dua1{
-            position: relative;
-         
-        }
-        .tiga{
-            height: 600px;
-            width: 600px;
-        
-            position: absolute;
-            display: flex;
-            justify-content:center ;
             align-items: center;
-            align-content: center;
-        }
-        .tiga1{
-            margin-top: 20px;
-            text-align: center;
-        }
-        .tiga1 img{
-            height: 100px;
-            width: 100px;
-            border-radius: 50%;
-            
-            
-        }
-        .tiga1:last-child{
-            margin-right: 10px;
-            margin-top: -30px;
            
-          
+        }
+        .container1{
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            grid-template-areas: "header" "aside" "main";
+        }
+    }
+    .gambar{
+        width: 100%;
+        height: 100%;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .img{
+        position: absolute;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+    .img img{
+        height: auto;
+        width: 70%;
+       
+    
+       
+    }
+    .gambarimg{
+        position: relative;
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon{
+        width: 70%;
+        height: 80%;
+    
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(50px,200px));
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icon1:nth-child(even){
+        margin-top: 300px;
+    }
+    .icon1:last-child{
+        margin-bottom: 50px;
+        background-color: rgba(255, 166, 0, 0.742);
+        box-shadow: 0 0 50px 2px orange;
+        rotate: 10deg;
+        border-radius: 50%;
+        margin-left: 8px;
         
-        }
-        .tiga1 .img1{
-            transform: rotate(-20deg);
-            margin-left: 40px;
-            background-color: rgba(255, 166, 0, 0.586);
-            text-align: center;
-            box-shadow: 0 0 50px  rgb(255, 166, 0);;
-        }
-        .tiga1 .img3{
-            transform: rotate(20deg);
+    }
+    .css{
+      
+        background-color: rgba(0, 255, 255, 0.764);
+    rotate: -15deg;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 2px aqua;
+        
+    }
+    
+    .icon img{
+        width: 100px;
+        height: 100px;
+    }
+    @media (max-width:700px){
+        .icon1:last-child{
+        
+            margin-left: 18px;
             
-            background-color: rgba(127, 240, 255, 0.652);
-            box-shadow: 0 0 50px  rgb(127, 240, 255);
         }
-        .tiga1 .img2{
-         background-color: rgba(255, 208, 0, 0.501);
-         box-shadow:0 0 50px  rgba(255, 208, 0, 0.501);
+        .icon1{
+            width: 10px;
+            height: 10px;
+        }
+        .bgbulat{
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+        }
+        .gambarimg{
+
          
-        
-           margin-top:300px;
-           margin-right: 20px;
-           border-radius: 50%;
-        }
-        
-        .teks1{
-        
-            justify-content: center;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
+       
         }
-        .teks1 p {
-            display: inline-block;
-            width: 80%;
-            margin-top: -10px;
-           
-           
+        .gambar{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+    }
+    .html{
+        background-color: rgba(255, 255, 0, 0.616);
+        border-radius: 50%;
+        box-shadow: 0 0 50px 2px yellow;
+    }
+    .bgbulat{
+        margin-top: 170px;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 0);
+        box-shadow: 0 0 40px 5px yellow;
+     
         
-        }
-        .teks1 h1{
-            color: white;
-            margin-bottom: -20px;
-            font-size: 56px;
-            font-weight: bold;
-            font-family: sans-serif;
-          
-        }
-        .teks1 span{
-            color: yellow;
-        }
         
+        
+    }
+    @media (max-width:700px){
+        .gambar img{
+            width: 100%;
+            height: auto;
+           
+        }
+       
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+    
+    /* Apply the bounce animation to all images with the class 'icon1' */
+    .icon1 {
+        display: inline-block;
+        animation: bounce 1.5s infinite;
+    }
+    .hidden-menu {
+        display: none;
+    }
+  
+    @media (min-width: 768px) {
+        .hidden-menu {
+            display: flex;
+            
+        }
+     
+    }
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 5em;
+        font-weight: bold;
+      
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .gambarimg:hover img {
+        transform: scale(1.1); /* Zoom in effect */
+        
+      }
+      .gambarimg:hover .text {
+        opacity: 1;
+        text-shadow:5px 5px 10px  rgb(4, 21, 255);
+        animation: bounce 1s infinite;
+      }
+      #typewriter {
+        font-size: 25px;
+        overflow: hidden; /* Mengatur overflow agar teks tidak keluar dari kotak */
+         /* Efek cursor */
+        white-space: nowrap; /* Agar teks tidak turun ke baris baru */
+        /* Posisi teks di tengah */
+        letter-spacing: .15em; /* Jarak antar huruf */
+        animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        color:yellow;
+      }
+      
+      /* Animasi mengetik */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+    #typewriter h2 {
+        display: inline; /* Untuk menjaga "Front End Developer" tetap dalam satu baris */
+        }
+        #typewriter .developer {
+        color: yellow; /* Ubah warna teks Developer menjadi biru */
+        }
         .sosmed{
-          display: flex;
-          width: 200px;
-          box-sizing: border-box;
-         
-          position: relative;
+            margin-top: 20px;
+  
+            width: 100%;
             
+          
         }
-        .sosmed a{
-            display: inline-block;
-            margin-right: -50px;
+             
+        .sosmed12{
+     
+            width: 60%;
+            display: flex;
         }
-        
         .sosmed img{
-           
-            height: 30px;
-          margin-left: -100px;
+            width: 200px;
+            height:auto ;
+            border: 2px solid yellow;
+            box-shadow: 0 0 5px yellow;
             border-radius: 50%;
-           border: 2px solid yellow;
         }
-        #typewriter {
-            font-size: 25px;
-            overflow: hidden; /* Mengatur overflow agar teks tidak keluar dari kotak */
-             /* Efek cursor */
-            white-space: nowrap; /* Agar teks tidak turun ke baris baru */
-            /* Posisi teks di tengah */
-            letter-spacing: .15em; /* Jarak antar huruf */
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-            color:yellow;
-          }
-          
-          /* Animasi mengetik */
-          @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-          }
-        #typewriter h2 {
-            display: inline; /* Untuk menjaga "Front End Developer" tetap dalam satu baris */
+        .sosmed a img {
+        
+            transition: transform 0.5s ease;
+        }
+        
+        .sosmed a img:hover {
+            transform: scale(1.5);
+        }
+        .linkdin{
+            animation: wave 1.5s infinite;
+        }
+        .ig{
+            animation: wavefb 1.5s infinite;
+
+        }
+        .twitter{
+            animation: wave 1.5s infinite;
+        }
+        .fb{
+            animation: wavefb 1.5s infinite;
+
+        }
+        @keyframes wave {
+            0% {
+                transform: translateY(0);
             }
-            #typewriter .developer {
-            color: yellow; /* Ubah warna teks Developer menjadi biru */
+            20% {
+                transform: translateY(-10px);
             }
-        .header{
-            position:sticky;
-            z-index: 999;
-            width: 100%;
-            display: flex;
-            justify-content: end;
-          
+            40% {
+                transform: translateY(0);
+            }
+            60% {
+                transform: translateY(10px);
+            }
+            80% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
         }
-        .nav{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-        }
-        
-        .nav ul{
-            width: 50%;
-            display: flex;
-            list-style: none;
-            justify-content: space-around;
-          
-            
-          
-            
-        }
-        
-        .nav a{
-            
-            
-            text-decoration: none;
-            margin-right: 20px;
-            color: white;
-            font-weight: bold;
-            
-            font-size: 20px;
-        }
-        .nav a:hover{
-            color: yellow;
-        }
-        .teks1{
-            width: 50%;
-        }
-        .teks1 a{
-            margin-left: 100px;
-            color: yellow;
-        }
-        .teks1 p{
-            color: white;
-        
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+        @keyframes wavefb {
+            100% {
+                transform: translateY(0);
+            }
+            80% {
+                transform: translateY(-10px);
+            }
+            60% {
                 transform: translateY(0);
             }
             40% {
-                transform: translateY(-30px);
+                transform: translateY(10px);
             }
-            60% {
-                transform: translateY(-15px);
+            20% {
+                transform: translateY(0);
+            }
+            0% {
+                transform: translateY(-10px);
             }
         }
-        
-        .bounce {
-            animation: bounce 2s infinite;
-        }
-        .text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 5em;
-            font-weight: bold;
-          
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-          }
-          .png:hover img {
-            transform: scale(1.1); /* Zoom in effect */
-            
-          }
-          .png:hover .text {
-            opacity: 1;
-            text-shadow:5px 5px 10px  rgb(4, 21, 255);
-            animation: bounce 1s infinite;
-          }
-          .typing-container {
-            font-family: monospace;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-top: -10px;
-            margin-bottom: 10px;
-            color: white;
-            font-size: 1.5em;
-            width: 24em; /* Adjust based on your text length */
-            
-            letter-spacing: 0.15em;
+        .content2{
+            width: 100vw;
+            height: 100vh;
             display: flex;
+            justify-content: center;
             align-items: center;
         }
-        .typing-container span{
-            color: yellow;
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
         }
-        
-        
-        
-        @keyframes blink {
-            0%, 50% {
-                opacity: 1;
-            }
-            50.01%, 100% {
-                opacity: 0;
-            }
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
         }
         .content{
             width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-
-        }
-        .content1{
-            flex-grow: 1;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            height: 40vh;
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(50px,200px));
+            justify-content: space-around;
             align-items: center;
-
+            
         }
-        .content1 img{
-            height: 500px;
-            width: auto;
+
+     
+        .content1{
+
+         
+            border-radius: 50px;
+            border: 5px solid yellow;
+    
+            text-align: center;
+            box-shadow: 0px 0px 5px yellow ;
         }
         .content1 h1{
-            color: white;
-
+            font-size: 4rem;
+            color: yellow;
+            margin-bottom: -20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .content2{
+        .content1 p{
+            color: yellow;
+            font-weight: bold;
+            font-size: 2rem;
+            
+        }
+        .content1:hover{
+            transform: scale(1.2);
+           
+        }
+        @media (max-width:700px){
+            .content{
+                height: 20vh;
+                margin: auto;
+                margin-top: 100px;
+                padding: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr ;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap:1;
+               
+            }
+            .sosmed12{
+                justify-content: center;
+                text-align: center;
+                margin: 10px auto;
+            }
+            .content1{
+                width: 80px;
+                height: auto;
+                
+            }
+            .content1 h1{
+                font-size: 36px;
+              
+            }
+            .content1 p{
+                margin-top: 5px;
+                font-size: 8px;
+            }
+        }
+        footer {
+            width: 100vw;
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        footer .contactme {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .containerf {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .pesan {
+            display: flex;
             flex-direction: column;
+            gap: 10px;
+        }
+        
+        .pesan label {
+            font-size: 1rem;
+        }
+        
+        .pesan input, .pesan textarea {
+            width: 100%;
+            padding: px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        
+        .pesan button {
+            background-color: yellow;
+            color: black;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .pesan button:hover {
+            background-color: gold;
+        }
+        
+        .contact table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        
+        .contact th, .contact td {
+            padding: 10px;
+            border: 1px solid white;
+        }
+        
+        .sosmed123 {
             display: flex;
             justify-content: center;
-            text-align: start;
-            align-items: center;
-            flex-grow: 2;
-            height: 100%;
-            padding: 50PX;
-            background-color: #131825;
+            gap: 10px;
+            margin-top: 10px;
         }
         
-
-
-.info {
-    width: 100%;
-    display: flex;
-    padding: 50px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.info h1 {
-    margin: 0 0 20px;
-    color: yellow;
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.info-table {
-    width: 100%;
-    height: 100px;
-    border-collapse: collapse;
-}
-
-.info-table th, .info-table td {
-    text-align: left;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.info-table th {
-    background-color: #f9f9f9;
-    color: #143c24;
-    display: flex;
-    align-items: center;
-}
-
-.info-table th i {
-    margin-right: 10px;
-}
-
-.info-table td {
-    color: #555;
-}
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
         
-      
+        .social-link img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
         
- 
-    
-   
+        .navigasi h1 {
+            margin-bottom: 10px;
+        }
+        
+        .navigasi ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .navigasi li {
+            margin: 5px 0;
+        }
+        
+        .navigasi a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .navigasi a:hover {
+            color: yellow;
+        }
+        
+        .teksf {
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 700px) {
+            .containerf {
+                grid-template-columns: 1fr;
+            }
+        
+            .contact table {
+                width: 100%;
+            }
+        }
+        .slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+          }
+          .slide {
+            min-width: 100%;
+            transition: opacity 0.5s ease-in-out;
+          }
+          .slide img {
+            border-radius: 8px;
+          }
+          .navigation-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+          }
+          .nav-button {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            padding: 0.5rem;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+          .nav-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+          }
+          .indicators {
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+          }
+          .indicator {
+            width: 0.75rem;
+            height: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+          }
+          .indicator.active {
+            background-color: rgba(255, 255, 255, 1);
+          }
         
     </style>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="teks1">
-               <a href="">Portfolio</a>
-            </div>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="">Client</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="containerutama">
-    <div class="container">
-        <div class="kotak">
-            <div class=" satu"></div>
-        </div>
-        <div class=" dua">
-            <div class="dua1">
-                <div class="tiga">
-                    <div class="tiga1">
-                        <img class="img1 bounce" src="html.png" alt="">
+    <div class="container1">
+        <header class="header1">
+            
+            <nav class=" p-4">
+                <div class="container mx-auto flex justify-between items-center">
+                    <a href="#" class="text-[#FFFF00] text-2xl font-bold">My Website</a>
+                    <div class="md:hidden">
+                        <button id="burger-menu" class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="tiga1">
-                        <img class="img2 bounce" src="js1.png" alt="">
-                    </div>
-                    <div class="tiga1">
-                        <img class="img3 bounce" src="css.png" alt="">
+                    <div class="hidden-menu md:flex md:items-center text-xl font-bold text-white mr-8 mx-2">
+                        <a href="#" class=" hover:text-[#FFFF00] mx-10 ">Home</a>
+                        <a href="#portfolio" class=" hover:text-[#FFFF00] mx-10">Portfolio</a>
+                        <a href="#" class=" hover:text-[#FFFF00] mx-10">Client</a>
+                        <a href="#" class=" hover:text-[#FFFF00] mx-10">Contact</a>
                     </div>
                 </div>
-                
-                <div class="png">
+            </nav>
+            <div id="mobile-menu" class="hidden fixed h-50 top-0 left-0 w-full text-white bg-white/20 backdrop-blur-md text-center p-4 z-10 md:hidden">
+                <a href="#" class="block hover:text-[#FFFF00]  py-2">Home</a>
+                <a href="#" class="block hover:text-[#FFFF00]  py-2">Portfolio</a>
+                <a href="#" class="block hover:text-[#FFFF00] py-2">Client</a>
+                <a href="#" class="block hover:text-[#FFFF00]  py-2">Contact</a>
+            </div>
+  
+        </header>
+       <aside class="aside1">
+        <div class="gambar">
+            <div class="bgbulat">
+           
+            </div>
+            <div class="img">
+                <div class="gambarimg">
+                    <div class="icon">
+                        <img class="css icon1" src="css.png" alt="">
+                        <img class="html icon1" src="js1.png" alt="">
+                        <img class="js icon1" src="html.png" alt="">
+                    </div>
+                    <img src="foto.png" alt="">
+                    <div class="text">hello</div>
 
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+       <main class="main1 flex justify-start items-center">
+
+        <div class="teks1 w-1/2 mt-20 ">
+            <h1 class="text-white text-4xl font-bold">Hi, I,m  <span class="text-[#FFFF00]">Fikri</span> </h1>
+            <h2 class="font-bold" id="typewriter">Frontend Developer</h2>
+           
+                <p class="text-white" > Lorem ipsum dolor, sit amet consectetur adipisicing elit.  repellat nobis, praesentium aliquam eum harum? Corrupti quisquam repellat delectus illo, alias quaerat atque quidem eius autem culpa suscipit hic eveniet.</p>
+                <div class="typing-container text-white font-bold ">
+                    <span id="typed-text"></span>
+                    <span class="cursor">&nbsp;</span>
+                </div>
+                <h4 class="text-[#FFFF00] font-bold" >my social media</h4>
+               
+                <div class="sosmed flex w-100">
+                    <div class="sosmed12 ">
+                        
+                                           
+                                           <a class="linkdin mx-2" href=""><img src="logo2.png" alt=""></a>
+                                           <a class="ig mx-2" href=""><img src="ig.png" alt=""></a>
+                                           <a class="twitter mx-2" href=""><img src="logo11.png" alt=""></a>
+                                           <a class="fb mx-2" href=""><img src="logo3.png" alt=""></a>
+                                           
+
+                    </div>
                     
-              <img src="foto.png" alt="">
-              <div class="text">hello</div>
+                </div>
             </div>
-                
-            </div>
-           
-        </div>
-    </div>
-    <div class="teks1">
-    <h1>Hi, I,m  <span>Fikri</span> </h1>
-    <h2 id="typewriter">Frontend Developer</h2>
-   
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam enim est minus! Provident perferendis rem qui consectetur repellat architecto tempora nisi? Animi deleniti commodi accusamus nobis, praesentium aliquam eum harum? Corrupti quisquam repellat delectus illo, alias quaerat atque quidem eius autem culpa suscipit hic eveniet.</p>
-        <div class="typing-container">
-            <span id="typed-text"></span>
-            <span class="cursor">&nbsp;</span>
-        </div>
-        <h4 style="color:white; margin-top:-5px;">my social media</h4>
-        <div class="sosmed">
-           
-           <a href=""><img src="logo2.png" alt=""></a>
-           <a href=""><img src="ig.png" alt=""></a>
-           <a href=""><img src="logo11.png" alt=""></a>
-           <a href=""><img src="logo3.png" alt=""></a>
-           
-            
-        </div>
-    </div>
-</div>
-
-
-<div class="content">
-    <div class="content1">
-        <h1>About me</h1>
-        <img src="gambar1.png" alt="">
-       
-    </div>
-    <div class="content2">
-    
-        <div class="info">
-            <h1>ZAINUL FIKRI</h1>
-            <table class="info-table">
-                
-                <tr>
-                    <th><i class="fas fa-envelope"></i> Email</th>
-                    <td>ZainulFikri550@gmail.com</td>
-                </tr>
-                <tr>
-                    <th><i class="fas fa-map-marker-alt"></i> Address</th>
-                    <td>1234 Jalan Sejahtera, Kota Damai</td>
-                </tr>
-                <tr>
-                    <th><i class="fas fa-phone"></i> Phone</th>
-                    <td>+62 812 3456 7890</td>
-                </tr>
-                <tr>
-                    <th><i class="fas fa-briefcase"></i> Profession</th>
-                    <td>Software Developer</td>
-                </tr>
-                <tr>
-                    <th><i class="fas fa-laptop-code"></i> Skills</th>
-                    <td>HTML, CSS, JavaScript, Python</td>
-                </tr>
-                <!-- Tambahkan informasi tambahan sesuai kebutuhan -->
-            </table>
-        </div>
-    </div>
         
 
 
+       </main>
+       
+    </div>
+    
+<div class="content">
+
+    <div class="content1">
+      <h1>03</h1>
+      <p>Awards</p>
+    </div>
+    <div class="content1">
+      <h1>22</h1>
+      <p>Project</p>
+    </div>
+    <div class="content1">
+      <h1>13</h1>
+      <p>clients</p>
+    </div>
+    <div class="content1">
+      <h1>01</h1>
+      <p>exprience</p>
+    </div>
 
 </div>
+    <div class="container mx-auto px-4 mt-8" id="portfolio">
+        <h1 class="text-3xl text-[#FFFF00] font-bold text-center mb-8">My Portfolio</h1>
+        <div class="flex overflow-x-scroll no-scrollbar space-x-4 pb-4">
+            <!-- Card 1 -->
+            <div class="bg-[#242435] rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 border-solid border-yellow-300 cursor-pointer">
+                <img src="port1.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-[#FFFF00] text-xl font-semibold mb-2">internship Project  biznisup</h2>
+                    <p class="text-white mb-4">Project internship membuat landing page integrasi api e-commerce </p>
+                    <button class="bg-[#FFFF00] text-[#242435] font-bold px-4 py-2 rounded-xl hover:bg-yellow-500"  onclick="showDetails('Internship Project', 'port1.png', 'Landing page website', 'React vite ,Taillwind ,JavaScript, HTML, CSS', '2023-03-20', 4)">Details</button>
+                </div>
+            </div>
+            <!-- Repeat Card -->
+            <div class="bg-[#242435] rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 cursor-pointer ">
+                <img src="port2.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-[#FFFF00] text-xl font-semibold mb-2">Project Dashboard Mentor</h2>
+                    <p class="text-white mb-4">project internship membuat dashboard Mentor.</p>
+                    <button class="bg-[#FFFF00] text-[#242435] font-bold px-4 py-2 rounded-xl hover:bg-yellow-500" onclick="showDetails('Dashboard Mentor', 'port2.png', 'projek ini berkolaborasi  dengan backend ,ui/ux ,digital marketing', 'react vite, css','taillwind','java script', '2023-07-21', 5)">Details</button>
+                </div>
+            </div>
+            <div class="bg-[#242435] rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 cursor-pointer">
+                <img src="zz.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-[#FFFF00] text-xl font-semibold mb-2">Hackthon Tbn Indonesia</h2>
+                    <p class="text-white mb-4">Hackthon membuat landing page selama 3 hari kolaborasi ui/ux backend</p>
+                    <button class="bg-[#FFFF00] text-[#242435] font-bold px-4 py-2 rounded-xl hover:bg-yellow-500" onclick="showDetails('Landing page ', 'zz.png', 'membuat landing page , hackthon 2.','react vite, css','taillwind','java script', '2023-07-21', 5)">Details</button>
+                </div>
+            </div>
+            <div class="bg-[#242435] rounded-lg shadow-lg overflow-hidden w-80 flex-shrink-0 cursor-pointer">
+                <img src="profile.png" alt="Project Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h2 class="text-[#FFFF00] text-xl font-semibold mb-2"> Company page</h2>
+                    <p class="text-white mb-4"><a href="https://maxyacademyblog.vercel.app/#events">Peroject membuat Company profile .</a></p>
+                    <button class="bg-[#FFFF00] text-[#242435] font-bold px-4 py-2 rounded-xl hover:bg-yellow-500" onclick="showDetails('Project Title 2', 'profile.png', 'membuat landing page untuk company', 'react vite, html ,taillwind', '2023-07-21', 5)">Details</button>
+                </div>
+            </div>
+           
+            <!-- Repeat as needed -->
+        </div>
+    </div>
 
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-[#242435] rounded-lg overflow-hidden w-96">
+            <div class="p-4">
+                <img id="modal-image" src="" alt="Project Image" class="w-full h-48 object-cover mb-4">
+                <h2 id="modal-title" class="text-xl font-semibold mb-2">Modal Title</h2>
+                <p id="modal-description" class="text-gray-700 mb-4">This is a detailed description.</p>
+                <p id="modal-technologies" class="text-gray-700 mb-2"><strong>Technologies:</strong> JavaScript, HTML, CSS</p>
+                <p id="modal-date" class="text-gray-700 mb-2"><strong>Date:</strong> 2023-07-20</p>
+                <div id="modal-testimonial" class="text-gray-700 mb-4">
+                    <strong>Testimonial:</strong>
+                    <div id="testimonial-stars"></div>
+                </div>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-xl hover:bg-red-600" onclick="hideModal()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div class="slider-wrapper w-full max-w-4xl mx-auto mt-10">
+        <div class="slider">
+          <div class="slide">
+            <img src="sertifikat.jpg" alt="Sertifikat 1" class="w-full h-auto">
+          </div>
+          <div class="slide">
+            <img src="sertifikat2.png" alt="Sertifikat 2" class="w-full h-auto">
+          </div>
+          <div class="slide">
+            <img src="sertifikat1.png" alt="Sertifikat 2" class="w-full h-auto">
+          </div>
+          <div class="slide">
+            <img src="sertifikat4.png" alt="Sertifikat 3" class="w-full h-auto">
+          </div>
+        </div>
+        <div class="navigation-buttons">
+          <button class="nav-button" id="prevSlide">&lt;</button>
+          <button class="nav-button" id="nextSlide">&gt;</button>
+        </div>
+        <div class="indicators">
+          <div class="indicator active"></div>
+          <div class="indicator"></div>
+          <div class="indicator"></div>
+        </div>
+      </div>
 
-
-
-
-
-
-<script src="scripts.js"></script>
+    <footer>
+        <h1 class="contactme">Contact me</h1>
+        <div class="containerf">
+            <div class="pesan">
+                <form action="">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email">
+                    <label for="pesan">Pesan</label>
+                    <textarea name="pesan" id="pesan" placeholder="Masukkan pesan"></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+            <div class="contact">
+                <table>
+                    <tr>
+                        <th colspan="2">Contact</th>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>zainulfikri550@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>WA:</td>
+                        <td>087654323456</td>
+                    </tr>
+                </table>
+                <h1>Social Media</h1>
+                <div class="sosmed123">
+                    <a class="social-link" href=""><img src="logo2.png" alt="LinkedIn"></a>
+                    <a class="social-link" href=""><img src="ig.png" alt="Instagram"></a>
+                    <a class="social-link" href=""><img src="logo11.png" alt="Twitter"></a>
+                    <a class="social-link" href=""><img src="logo3.png" alt="Facebook"></a>
+                </div>
+            </div>
+            <div class="navigasi">
+                <h1>Navigasi</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Client</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="teksf">
+            <h1>Zainul Fikri ©2024. All rights reserved.</h1>
+        </div>
+    </footer>
+    
+    <script src="script.js"> </script>
 </body>
 </html>
